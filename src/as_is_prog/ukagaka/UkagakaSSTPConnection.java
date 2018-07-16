@@ -37,12 +37,12 @@ public class UkagakaSSTPConnection {
 	}
 	
 	/***
-	 * Notify1.0を送信します。
+	 * Notify1.1を送信します。
 	 * @param eventName イベントの識別子
 	 * @param ref Reference0 to 7
 	 * @throws IOException 
 	 */
-	public String sendNotify1_0(String eventName,String... ref) throws IOException{
+	public String sendNotify1_1(String eventName,String... ref) throws IOException{
 		String sendDataStr = "NOTIFY SSTP/1.1\r\n"
 						   + "Sender: "+sender+"\r\n"
 						   + "Event: "+eventName+"\r\n";
