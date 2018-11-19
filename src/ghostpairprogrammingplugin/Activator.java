@@ -17,7 +17,7 @@ public class Activator extends AbstractUIPlugin implements IStartup {
 
 	// The shared instance
 	private static Activator plugin;
-	
+
 	/**
 	 * The constructor
 	 */
@@ -68,6 +68,9 @@ public class Activator extends AbstractUIPlugin implements IStartup {
 	@Override
 	public void earlyStartup() {
 		// TODO Auto-generated method stub
-		
+		plugin = this;
+		System.err.println("startasfjaisjfioasjefioesjfoijasf");
+		JDIDebugModel.addJavaBreakpointListener(new BreakpointActionDelegate());
+
 	}
 }
